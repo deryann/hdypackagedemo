@@ -32,6 +32,7 @@ jobs:
       run: |
         python setup.py
     - name: Install new package
+      run: |
         python -m pip install ./dist/hdy-2021.2.8-py3-none-any.whl
     - name: Lint with flake8
       run: |
