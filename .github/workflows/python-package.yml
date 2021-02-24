@@ -45,7 +45,8 @@ jobs:
         pytest tests
     - name: Pylint
       run: |
-        pylint .
+        pylint hdy
+        pylint *.py
     - name: Upload whl results
       uses: actions/upload-artifact@v2
       with:
